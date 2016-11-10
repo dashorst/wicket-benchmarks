@@ -1,0 +1,29 @@
+= Wicket Micro Benchmarks
+Martijn Dashorst
+
+This project provides a way to perform micro benchmarks for parts of Wicket.
+
+It is based on and uses the JMH (Java Microbenchmark Harnass):
+
+____
+JMH is a Java harness for building, running, and analysing
+nano/micro/milli/macro benchmarks written in Java and other languages
+targetting the JVM.
+____
+
+To run a benchmark you need to build it first using Maven:
+
+[source,bash]
+----
+$ mvn package
+----
+
+This will create a `target/benchmarks.jar` uber-jar.
+
+You can then run the micro benchmark from your IDE or from the commandline.
+
+For example:
+
+----
+java -cp target/benchmarks.jar com.martijndashorst.wicketbenchmarks.LambdaModels
+----
