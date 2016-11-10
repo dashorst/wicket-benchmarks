@@ -24,6 +24,7 @@ You can then run the micro benchmark from your IDE or from the commandline.
 
 For example:
 
+[source,bash]
 ----
-java -cp target/benchmarks.jar com.martijndashorst.wicketbenchmarks.LambdaModels
+$ java -cp target/benchmarks.jar com.martijndashorst.wicketbenchmarks.LambdaModels
 ----
